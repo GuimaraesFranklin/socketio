@@ -4,7 +4,7 @@
   "description": "Projeto para auxilio de emissao de Cupom Fiscais",
   "main": "init.js",
   "dependencies": {
-    "onehost-ecf": "gersonfs/onehost-ecf.git#master"
+    "onehost-ecf": "git://github.com/gersonfs/onehost-ecf.git#master"
   },
   "devDependencies": {},
   "scripts": {
