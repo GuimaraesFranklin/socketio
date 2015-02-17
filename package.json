@@ -1,0 +1,22 @@
+{
+  "name": "socketio",
+  "version": "0.0.1",
+  "description": "Projeto para auxilio de emissao de Cupom Fiscais",
+  "main": "init.js",
+  "dependencies": {
+    "onehost-ecf": "gersonfs/onehost-ecf.git#master"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gersonfs/socketio.git"
+  },
+  "author": "Gerson Felipe Schwinn <gersonfs@gmail.com> (http://github.com/gersonfs)",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/gersonfs/socketio/issues"
+  }
+}

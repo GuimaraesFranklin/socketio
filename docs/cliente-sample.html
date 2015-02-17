@@ -1,0 +1,13 @@
+<script src="http://127.0.0.1:81/socket.io/socket.io.js"></script>
+<script>
+  var socket = io.connect('http://127.0.0.1:81');
+  socket.on('ready', function (data) {
+    socket.emit('escrever_comando', { comando: 'ECF.Ativar'});
+  });
+  
+  socket.on('retorno_comandos', function (dados){
+    var retorno = dados.retorno[0];
+});
+  
+socket.disconnect();
+</script>
