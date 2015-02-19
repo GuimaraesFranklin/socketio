@@ -5,7 +5,8 @@ var config = {
     portaServidor: 81,
     usarSockets: true,
     debug: true,
-    caminhoImpressoraSerial: "/dev/usb/lp0"
+    caminhoImpressoraSerial: "/dev/usb/lp0",
+    usarIconv: true
 };
 
 module.exports = config;
