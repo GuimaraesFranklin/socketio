@@ -1,3 +1,3 @@
 global.config = require('./config');
-var servidor = require('./lib/servidor.js');
+var servidor = require('onehost-ecf');
 servidor.run();
