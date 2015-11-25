@@ -5,8 +5,9 @@ var config = {
     portaServidor: 81,
     usarSockets: true,
     debug: true,
-    caminhoImpressoraSerial: "/dev/usb/lp0",
-    usarIconv: true
+    caminhoImpressoraSerial: "LPT1",
+    usarIconv: false,
+    comandoImpressao: "/var/www/socketio/imprimir.sh-daruma"
 };
 
 module.exports = config;

@@ -14,3 +14,7 @@
 ## Para impressao pela DLL
 1. Configurar porta e velocidade correta em DarumaFrameWork.xml
 2. Arrumar o arquivo DarumaNaoFiscal.bat para imprimir pelo EXE
+
+
+##Para impressão de NFC-e é necessário mapear a impressora numa porta LPT
+net use lpt2 \\pserver\laser1 /persistent:yes
