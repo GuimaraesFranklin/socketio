@@ -1,4 +1,2 @@
 REM pode ser necessário executar mode comx:115200,n,8,1
 move imprimir.txt bin/daruma/imprimir.txt
-cd bin/daruma/
-java -Djava.library.path="C:\\sites\\socketio\\bin\\daruma\\Darumaframework_DLL64" -jar DarumaDll.jar
