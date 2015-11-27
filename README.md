@@ -11,9 +11,17 @@
 1. Configurar porta e velocidade correta em IniciarDarumaNaoFiscal.bat OU instalar uma impressora modo texto no windows 
 2. Configurar para o windows inicializar corretamente o arquivo IniciarDarumaNaoFiscal.bat ou o passo anterior
 
-## Para impressao pela DLL
-1. Configurar porta e velocidade correta em DarumaFrameWork.xml
-2. Arrumar o arquivo DarumaNaoFiscal.bat para imprimir pelo EXE
+## Para impressao pela DLL Daruma
+1. Configurar porta e velocidade correta em bin/daruma/DarumaFrameWork.xml
+
+1.1 Deve-se corrigir as tags <Produto>, <PortaComunicacao> do respectivo produto e <Velocidade> 
+
+2 . Executar na inicialização do windows: 
+```
+cd bin/daruma/
+javaw -Djava.library.path="CAMINHO COMPLETO PARA A PASTA bin/daruma/dll" -jar DarumaDll.jar
+```
+3. Arrumar o arquivo imprimir.bat para que mova o arquivo imprimir.txt para a pasta onde se encontra o arquivo .jar
 
 
 ##Para impressão de NFC-e é necessário mapear a impressora numa porta LPT
