@@ -1,0 +1,5 @@
+{
+    "threadDelay": 500,
+    "debug" : false,
+    "arquivoImprimir": "imprimir.txt"
+}
