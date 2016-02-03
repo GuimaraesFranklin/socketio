@@ -7,7 +7,8 @@ var config = {
     debug: true,
     caminhoImpressoraSerial: "LPT1",
     usarIconv: false,
-    comandoImpressao: "/var/www/socketio/imprimir.sh-daruma"
+    //comandoImpressao: "/var/www/socketio/imprimir.sh-daruma",
+    pastaDestinoArquivoSerial: "bin/daruma/"
 };
 
 module.exports = config;
