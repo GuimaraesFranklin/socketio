@@ -5,6 +5,7 @@
 2. Abrir o DOS e digitar cd C:\ACBrMonitor\socketio\bin
 3. executar nssm.exe install servidor-cupom "C:\Arquivos de programas\nodejs\node.exe" C:\ACBrMonitor\socketio\init.js
 4. net start servidor-cupom
+5 . Ou instalar na inicialização o arquivo .bat na pasta %appdata%\microsoft\windows\start menu\programs\startup
 
 
 ## Para as emissoras de cupom nao fiscal direto
