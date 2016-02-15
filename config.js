@@ -1,7 +1,8 @@
 var config = {
-    arquivoEntradaACBR: 'C:/ACBrMonitor/ENT.TXT',
-    arquivoSaidaACBR: 'C:/ACBrMonitor/SAI.TXT',
-    pastaACBR: 'C:/ACBrMonitor',
+    //arquivoEntradaACBR: 'C:/ACBrMonitor/ENT.TXT',
+    //arquivoSaidaACBR: 'C:/ACBrMonitor/SAI.TXT',
+    //pastaACBR: 'C:/ACBrMonitor',
+    usarACBR: false,
     portaServidor: 81,
     usarSockets: true,
     debug: true,

@@ -1,4 +1,5 @@
 {
     "threadDelay": 500,
-    "debug" : true
+    "debug" : true,
+    "separadorArquivo": "#!#"
 }
