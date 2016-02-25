@@ -24,6 +24,70 @@ WS_Framework - Biblioteca utilizada para comunicação com WebService da NFCe.
 
 DarumaFramework.dll
 
+Data de liberação: 13/01/2015
+
+Versão Arquivo: 10.05.01
+ECF 11.45, DUAL 5.19, MODEM 3.61, TA2000 4.05, GENERICO 1.05, DSP 1.05, NFCe 2.81, NFe 1.00, SAT 1.88
+MD-5: F2185BBBE3932FC65C0A88767826AB94
+
+----- ECF
+Implementação - iCFEncerrarConfigMensagem_ECF_Daruma - Ajustes feitos no método para funcionamento correto na FS800i;
+Implementação - rTipoUltimoDocumentoStr_ECF_Daruma - acrescentado o retorno 8 para CFC - Cupom Fiscal de Cancelamento;
+
+Nova Implementação - Métodos de Bilhete de Passagem - Compatibilizados para funcionamento com a FS800i;
+
+----- NFCe 
+Implementação - tCFEncerrar_NFCe_Daruma - Ajustes na função para quando a tag <NaoReenviarCtg> estiver ativa e ocorrer um retorno de erro do WebService;
+Implementação - rAvisoErro_NFCe_Daruma - Quando está com valor 2 e a configuração <ImpressaoCompleta> com valor 3, estava retornando valor errado para emissão em contingência;
+Implementação - tCFEncerrar_NFCe_Daruma - Montagem do QRCode - feito ajustes na rotina que monta o QRCode para tratar acentuação quando a UF de emissão for MT;
+Implementação - aCFCancelarItem_NFCe_Daruma - rotina de cancelamento revisada para quando for cancelado o primeiro item e a venda for em homologação para seguir as regras da NT2015002;
+Implementação - eAtualizarEnviarXML_NFCe_Daruma - Rotina revisada para calcular corretamente o DigVal de acordo com a NT2015002;
+Implementação - tCFEncerrar_NFCe_Daruma - Ajustes na rotina interna que configura os impostos configurados para os itens para quando o imposto for ICMSSN900, para que não ocorra violação de acesso no encerramento;
+
+----- SAT 
+Implementação - aCFVender_SAT_Daruma - Revisão da rotina para garantir mais precisão com arredondamento e truncamento no cálculo dos itens;
+Implementação - Impressão na DR800 L - Foi acrescentado o modelo da DR800L para impressão do comprovante CF-e;
+Implementação - regAlterarValor_SAT_Daruma - Feito ajustes na rotina que altera o XML auxiliar SAT para evitar repetição de tags e desalinhamento do xml;
+Implementação - regAlterarValor_SAT_Daruma - Função ajustada para aceitar o tamanho correto do endereço no cabeçalho do comprovante;
+
+
+ATENÇÃO - A biblioteca abaixo foi atualizada:
+GNE_Framework - versão 02.18.30 – MD5: BAEE1382ADBAE21E748064C126040A57
+-----------------------------------------------------------------------
+Data de liberação: 11/12/2015
+
+Versão Arquivo: 10.04.02
+ECF 11.43, DUAL 5.19, MODEM 3.61, TA2000 4.05, GENERICO 1.05, DSP 1.05, NFCe 2.79, NFe 1.00, SAT 1.86
+MD-5: 7D04EED090371DEB58E6B796B9C71812
+
+----- ECF
+Implementação - iCFAbrir_ECF_Daruma - para a FS800i, foi feito uma alteração no método para não dar erro quando não informado o CPF/ CNPJ e informado "-" no endereço.
+
+----- DUAL
+Nova Implementação - Feita compatibilização para uso da impressora DR800
+
+----- MODEM
+Implementação - rLerSmsConfirmacao_MODEM_DarumaFramework - Feito ajustes no funcionamento do método para as operadoras que alteraram a forma de enviar a confirmação de entrega, antes era apenas como SMS, e agora algumas funcionam com notificação apenas.
+
+----- NFCe 
+Implementação - Atualização dos links para produção da SEFAZ - PR no xml auxiliar.
+Implementação - Rotina de calculos para total de itens e subtotal do cupom - ajustada para quando utilizado o arredondamento.
+Implementação - ICMSSN900 - Ajustes para uso do imposto por congiguração no xml auxiliar ou utilizando o método aCFConfICMSSN900_NFCe_Daruma.
+Implementação - aCFConfCofinsQtde_NFCe_Daruma - Ajustes na atualização do campo vAliqProd e dá desconto no item. 
+Implementação - Montagem do QRCode impresso na nota - Alerada a montagem do QrCode para os estados BA, PB e PR, para que não acuse erro no Hash do Qr Code.
+Implementação - iCFImprimir_NFCe_Daruma - Alterações para que o método consiga imprimir xmls do novo layout, seguindo Nota Técnica 2015.002.
+Implementação - aCFAbrir_NFCe_Daruma ou aCFIdentificarConsumidor_NFCe_Daruma - Passou a aceitar o CPF com máscara, retirando a mesma para envio no xml.
+Implementação - Danfe, layout e impressão - Alterada a sequência das informações de endereço para ficar: Logradouro , nº, Complemento, Bairro, Cidade e UF. E quando impressa em contingência não traz mais a mensagem de emitida em ambiente de homologação.
+Implementação - tEnvioUnitContingenciaCancOffline_NFCe_Daruma - Ajustado o retorno das informações para que a chave de acesso seja retornada completa.
+
+----- SAT 
+Implementação - tCFeEncerrar_SAT_Daruma - feito ajustes para o uso com Observer, para que não feche o Observer quando executado o método.
+Implementação - tCFeVender_SAT_Daruma - alterações feitas para aceitar a tag <obsFiscoDet>. 
+
+ATENÇÃO - A biblioteca abaixo foi atualizada:
+GNE_Framework - versão 02.18.25 – MD5: 86B60F0876D530939F542E017FBCF157
+WS_Framework - versão 01.05.16 - MD5: A7C71688BEE48E7ECF1DABE36E1C77D1
+-----------------------------------------------------------------------
 Data de liberação: 10/10/2015
 
 Versão Arquivo: 10.03.02
