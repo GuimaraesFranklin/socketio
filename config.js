@@ -1,7 +1,7 @@
 var config = {
-    portaServidor: 81,
+    portaServidor: 8081,
     debug: true,
-    hostACBR: '192.168.1.102'
+    hostACBR: '127.0.0.1'
     //comandoImpressao: "/var/www/socketio/imprimir.sh-daruma",
     //pastaDestinoArquivoSerial: "bin/daruma/"
 };

@@ -1,9 +1,9 @@
 # onehost-ecf
 
 ## Para todos os casos de impressora fiscal, executar (observe os caminhos, pode variar onde é instalado o programa devido a versão do Windows):
-1. Criar a pasta C:\ACBrMonitor\socketio
-2. Abrir o DOS e digitar cd C:\ACBrMonitor\socketio\bin
-3. executar nssm.exe install servidor-cupom "C:\Arquivos de programas\nodejs\node.exe" C:\ACBrMonitor\socketio\init.js
+1. Criar a pasta C:\onehost\socketio
+2. Abrir o DOS e digitar cd C:\onehost\socketio\bin
+3. executar nssm.exe install servidor-cupom "C:\onehost\socketio\bin\node.exe" C:\onehost\socketio\init.js"
 4. net start servidor-cupom
 5 . Ou instalar na inicialização o arquivo .bat na pasta %appdata%\microsoft\windows\start menu\programs\startup
 
@@ -23,5 +23,5 @@
 
 
 ##Para impressão de NFC-e da elgin é necessário mapear a impressora numa porta LPT quando a mesma for USB
-net use lpt2 \\pserver\laser1 /persistent:yes
-Aí no imprimir.bat usa type imrpimir.txt > LPT2
+net use LPT2 \\.\laser1 /persistent:yes
+Aí no imprimir.bat usa type imprimir.txt > LPT2
