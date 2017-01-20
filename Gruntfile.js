@@ -21,14 +21,6 @@ module.exports = function (grunt) {
                             'init.bat',
                             'init.js',
                         ]
-                    },
-                    {
-                        src: 'public_html/.htaccess-sem-loja', 
-                        expand:true, 
-                        rename: function (){ 
-                            return 'public_html/.htaccess' 
-                        }, 
-                        dot: true
                     }
                 ]
             },
