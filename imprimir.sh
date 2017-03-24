@@ -2,5 +2,5 @@
 #cd bin/daruma/
 #java -Djava.library.path="/home/gerson/libs/" -jar DarumaDll.jar
 
-cat imprimir.txt > /dev/usb/lp1
-rm -f  imprimir.txt
+#cat imprimir.txt > /dev/ttyACM0
+#rm -f  imprimir.txt

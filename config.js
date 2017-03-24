@@ -3,7 +3,8 @@ var config = {
     debug: true,
     hostACBR: '127.0.0.1',
     executarShell: false,
-    comandoImpressao: "C:/onehost/socketio/imprimir.bat"
+    comandoImpressao: "/var/www/socketio/imprimir.sh"
+    //comandoImpressao: "C:/onehost/socketio/imprimir.bat"
     //pastaDestinoArquivoSerial: "bin/daruma/",
 };
 
