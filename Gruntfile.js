@@ -12,8 +12,7 @@ module.exports = function (grunt) {
                     {src: [
                             'bin/**', 
                             'lib/**', 
-                            '!node_modules/grunt/**',
-                            '!node_modules/grunt-contrib-compress/**',
+                            '!node_modules/**',
                             'package.json',
                             'README.md', 
                             'config.js',
