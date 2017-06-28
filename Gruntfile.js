@@ -1,6 +1,6 @@
 module.exports = function (grunt) {
 
-    grunt.loadNpmTasks('grunt-contrib-compress');
+    require('load-grunt-tasks')(grunt);
 
     grunt.initConfig({
         compress: {
@@ -9,12 +9,13 @@ module.exports = function (grunt) {
                     archive: 'dist/socketio.zip'
                 },
                 files: [
-                    {src: [
-                            'bin/**', 
-                            'lib/**', 
+                    {
+                        src: [
+                            'bin/**',
+                            'lib/**',
                             '!node_modules/**',
                             'package.json',
-                            'README.md', 
+                            'README.md',
                             'config.js',
                             'imprimir.bat',
                             'init.bat',
@@ -24,5 +25,12 @@ module.exports = function (grunt) {
                 ]
             },
         },
+        shell: {
+            target: {
+                command: 'rsync -avz dist/socketio.zip oneweb@downloads.oneweb.com.br:downloads/public_html/'
+            }
+        }
     });
+
+    grunt.registerTask('default', ['compress:admin', 'shell']);
 };
