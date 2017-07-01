@@ -13,6 +13,7 @@ module.exports = function (grunt) {
                         src: [
                             'bin/**',
                             'lib/**',
+                            'certs/**',
                             '!node_modules/**',
                             'package.json',
                             'README.md',
