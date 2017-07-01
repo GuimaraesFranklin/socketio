@@ -1,5 +1,7 @@
 var config = {
     portaServidor: 81,
+    habilitarSSL: true,
+    portaServidorSSL: 443,
     debug: true,
     hostACBR: '127.0.0.1',
     executarShell: false,
