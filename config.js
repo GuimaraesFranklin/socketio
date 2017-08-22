@@ -6,8 +6,10 @@ var config = {
     sitef: {
         habilitar: true,
         debug: true,
-        pastaDestino: '/var/www/socketio/tmp/',
-        //pastaDestino: 'C:/Cliente/Req/',
+        pastaDestinoReq: '/var/www/socketio/tmp/Req/',
+        //pastaDestinoReq: 'C:/Cliente/Req/',
+        pastaDestinoResp: '/var/www/socketio/tmp/Resp/',
+        //pastaDestinoResp: 'C:/Cliente/Resp/',
     },
     
     hostACBR: '127.0.0.1',
