@@ -7,9 +7,9 @@ var config = {
         habilitar: true,
         debug: true,
         pastaDestinoReq: '/var/www/socketio/tmp/Req/',
-        //pastaDestinoReq: 'C:/Cliente/Req/',
+        //pastaDestinoReq: 'C:/Client/Req/',
         pastaDestinoResp: '/var/www/socketio/tmp/Resp/',
-        //pastaDestinoResp: 'C:/Cliente/Resp/',
+        //pastaDestinoResp: 'C:/Client/Resp/',
     },
     
     hostACBR: '127.0.0.1',
