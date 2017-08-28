@@ -4,7 +4,7 @@
   "description": "Projeto para auxilio de emissao de Cupom Fiscais",
   "main": "init.js",
   "dependencies": {
-    "serialport": "^4.0.7",
+    "serialport": "^5.0.0",
     "socket.io": "^2.0.3"
   },
   "devDependencies": {

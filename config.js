@@ -5,11 +5,11 @@ var config = {
     debug: true,
     sitef: {
         habilitar: true,
-        debug: true,
-        pastaDestinoReq: '/var/www/socketio/tmp/Req/',
-        //pastaDestinoReq: 'C:/Client/Req/',
-        pastaDestinoResp: '/var/www/socketio/tmp/Resp/',
-        //pastaDestinoResp: 'C:/Client/Resp/',
+        debug: false,
+        //pastaDestinoReq: '/var/www/socketio/tmp/Req/',
+        pastaDestinoReq: 'C:/Client/Req/',
+        //pastaDestinoResp: '/var/www/socketio/tmp/Resp/',
+        pastaDestinoResp: 'C:/Client/Resp/',
     },
     
     hostACBR: '127.0.0.1',
