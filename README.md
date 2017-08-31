@@ -1,11 +1,19 @@
 # onehost-ecf
 
 ## Para todos os casos de impressora fiscal, executar (observe os caminhos, pode variar onde é instalado o programa devido a versão do Windows):
-1. Criar a pasta C:\onehost\socketio
-2. Abrir o DOS e digitar cd C:\onehost\socketio\bin
-3. executar nssm.exe install servidor-cupom "C:\onehost\socketio\bin\node.exe" C:\onehost\socketio\init.js"
-4. net start servidor-cupom
-5 . Ou instalar na inicialização o arquivo .bat na pasta %appdata%\microsoft\windows\start menu\programs\startup
+
+baixar de downloads.oneweb.com.br\socketio.zip
+descompactacr em C:\onehost\socketio
+- elgin precisa instalar o driver para ela aparecer na lista de impressoras como impressora, e não dispositivo
+- compartilhar a impressora na rede, clicando com o direito nela, Propriedades da impressora, Compartilhamento, colocar um nome de compartilhamento simples, facil de memorizar, exemplo: ELGIN
+- NO IMPRIMIR.BAT precisa corrigir no nome do compartilhamento, onde diz: type imprimir.txt >> \\nome-pc\impressora
+para o nome correto daquele pc e da impressora. O nome do pc tem no icone "Computador" do iniciar, ou em outras areas.
+
+
+- acessar pelo cmd a pasta c:\onehost\socketio e digitar bin\node\npm install --no-dev
+- editar o init.bat e comentar ou apagar as linahs referente a impressora daruma, tirar o start /b da linha do node.exe
+- instalar o serviço do windows (pde ser necessário abrir outra janela do cmd, clicando com o direito e executar como administrador): bin\nssm\win32\nssm.exe install servidor-cupom c:\onehost\socketio\init.bat  (talvez precisa usar o win64 do nssm). Verifique se o serviço já nao existe, pode ser que tenha algum legado. Remova ele com nssm.exe remove servidor-cupom
+- digitar sc start servidor-cupom. Confira se esta escutando na porta especificada no arquivo config.js, exemplo: netstat -ant | find ":numero da porta"
 
 
 ## Para as emissoras de cupom nao fiscal direto
