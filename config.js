@@ -10,6 +10,7 @@ var config = {
         pastaDestinoReq: 'C:/Client/Req/',
         //pastaDestinoResp: '/var/www/socketio/tmp/Resp/',
         pastaDestinoResp: 'C:/Client/Resp/',
+        pastaArquivosExemplo: 'C:/onehost/socketio/'
     },
     
     hostACBR: '127.0.0.1',
