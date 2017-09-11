@@ -1,3 +1,3 @@
-global.config = require('./config');
-var servidor = require('./lib/servidor.js');
-servidor.run();
+config = require('./config');
+var servidor = require('livregestao-client');
+servidor.run(config);
