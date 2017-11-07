@@ -12,7 +12,6 @@ module.exports = function (grunt) {
                     {
                         src: [
                             'bin/**',
-                            'certs/**',
                             '!node_modules/**',
                             'package.json',
                             'README.md',
