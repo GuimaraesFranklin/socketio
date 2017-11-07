@@ -4,8 +4,8 @@
   "description": "Projeto para auxilio de emissao de Cupom Fiscais",
   "main": "init.js",
   "dependencies": {
-    "serialport": "^4.0.7",
-    "socket.io": "^2.0.3"
+    "livregestao-client": "0.x",
+    "npm-programmatic": "0.0.8"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
@@ -14,7 +14,8 @@
     "load-grunt-tasks": "^3.5.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node.exe init.js"
   },
   "repository": {
     "type": "git",
