@@ -1,6 +1,6 @@
 var config = {
-    portaServidor: 8081,
-    habilitarSSL: true,
+    portaServidor: 81,
+    habilitarSSL: false,
     portaServidorSSL: 8081,
     debug: true,
     sitef: {
