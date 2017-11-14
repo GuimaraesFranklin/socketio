@@ -1,6 +1,8 @@
 cd C:\onehost\socketio
 REM START /B bin\node\npm.cmd update livregestao-client
 bin\node\node.exe init.js
+
+REM bin\node\node64.exe init.js
 REM ou
 REM START /B bin\node\node.exe init.js
 REM cd bin\daruma

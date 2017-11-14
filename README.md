@@ -5,7 +5,7 @@
 1- Baixar de http://downloads.oneweb.com.br/socketio.zip
 descompactar em C:\onehost\socketio
 
-2 - Fazer download do nodejs versão 8.9.x em https://nodejs.org/en/ Pode ser versão 32 ou 64 bits, depende do computador
+2 - Fazer download do nodejs versão 8.9.x em https://nodejs.org/en/ Tente a versão 32 bits
 
 3 - Cadastrar corretamente o terminal em http://...../admin/ow_cupom_fiscal/ecf_terminais
 
