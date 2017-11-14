@@ -26,7 +26,7 @@
     <Margem>00;00</Margem>
     <TempoEsperaLeitura>10</TempoEsperaLeitura>
     <Termica>1</Termica>
-    <Velocidade>9600</Velocidade>
+    <Velocidade>115200</Velocidade>
     <ZeroCortado>0</ZeroCortado>
     <Rota1>COM1>000.000.000.000:0000</Rota1>
     <Rota2>COM2>000.000.000.000:0000</Rota2>

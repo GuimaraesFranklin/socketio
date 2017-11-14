@@ -4,8 +4,7 @@
   "description": "Projeto para auxilio de emissao de Cupom Fiscais",
   "main": "init.js",
   "dependencies": {
-    "livregestao-client": "0.x",
-    "npm-programmatic": "0.0.8"
+    "livregestao-client": "0.x"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
