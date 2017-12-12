@@ -12,6 +12,8 @@ module.exports = function (grunt) {
                     {
                         src: [
                             'bin/**',
+                            'logs/empty',
+                            'arquivos/sitef/empty',
                             '!node_modules/**',
                             'package.json',
                             'README.md',
