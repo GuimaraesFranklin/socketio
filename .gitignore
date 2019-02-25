@@ -4,3 +4,4 @@ node_modules/
 /tmp/
 /arquivos/
 /logs/
+.vscode/
