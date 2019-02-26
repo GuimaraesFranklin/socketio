@@ -17,8 +17,8 @@ var config = {
     "hostACBR": "127.0.0.1",
     "portaACBR": 3434,
     "executarShell": false,
-    "comandoImpressao": "/var/www/socketio/imprimir.sh"
-    //comandoImpressao: "C:/onehost/socketio/imprimir.bat"
+    //"comandoImpressao": "/var/www/socketio/imprimir.sh"
+    comandoImpressao: "C:/onehost/socketio/imprimir.bat"
     //pastaDestinoArquivoSerial: "bin/daruma/",
 };
 
